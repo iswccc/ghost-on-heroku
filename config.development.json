@@ -18,8 +18,8 @@
       "port": 465,
       "service": "SES",
       "auth": {
-        "user": "AKIAVHGCTNLZVZRFERHC",
-        "pass": "BDZkIWGc+mrrLbxK5SwscdU2cAqUK+DvHMSox+hV+aAd"
+        "user": "process.env.AWS_SES_USER",
+        "pass": "process.env.AWS_SES_PASS"
       }
     }
   },
