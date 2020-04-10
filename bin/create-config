@@ -68,11 +68,14 @@ function createConfig() {
     },
     mail: {
       transport: 'SMTP',
+      from: 'blog@masjidalrahman.com',
       options: {
-        service: 'Mailgun',
+        host: 'email-smtp.us-east-1.amazonaws.com',
+        port: '465',
+        service: 'SES',
         auth: {
-          user: process.env.MAILGUN_SMTP_LOGIN,
-          pass: process.env.MAILGUN_SMTP_PASSWORD
+          user: process.env.SES_SMTP_USER,
+          pass: process.env.SES_SMTP_PASSWORD
         }
       }
     },
