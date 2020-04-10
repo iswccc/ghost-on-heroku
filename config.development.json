@@ -11,7 +11,17 @@
     }
   },
   "mail": {
-    "transport": "Direct"
+    "transport": "SMTP",
+    "from": "blog@masjidalrahman.com",
+    "options": {
+      "host": "email-smtp.us-east-1.amazonaws.com",
+      "port": 465,
+      "service": "SES",
+      "auth": {
+        "user": "AKIAVHGCTNLZVZRFERHC",
+        "pass": "BDZkIWGc+mrrLbxK5SwscdU2cAqUK+DvHMSox+hV+aAd"
+      }
+    }
   },
   "logging": {
     "transports": [
