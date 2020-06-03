@@ -29,7 +29,20 @@ into the {body} of the default.hbs template --}}
         <section class="subscribe-form">
             <h3 class="subscribe-form-title">Subscribe to {{@site.title}}</h3>
             <p>Get the latest posts delivered right to your inbox</p>
-            {{subscribe_form placeholder="youremail@example.com"}}
+        <form data-members-form="subscribe">
+        <div class="form-group">
+            <input class="subscribe-email" data-members-email placeholder="youremail@example.com" autocomplete="false" />
+            <button class="button primary" type="submit">
+                <span class="button-content">Subscribe</span>
+            </button>
+        </div>
+        <div class="message-success">
+            <strong>Great!</strong> Check your inbox and click the link to confirm your subscription.
+        </div>
+        <div class="message-error">
+            Please enter a valid email address!
+        </div>
+    </form>
         </section>
 
         <footer class="post-footer">
